@@ -106,7 +106,7 @@ describe("NFT Shop", async () => {
     });
 
     it("charges the correct amount of ETH", async () => {
-      const diff = TOKEN_BALANCE_AFTER_TX - TOKEN_BALANCE_BEFORE_TX;
+      const diff = ETH_BALANCE_AFTER_TX - ETH_BALANCE_BEFORE_TX;
       const expectedDiff = TEST_ETH_VALUE + TX_FEES;
       expect(diff).to.eq(expectedDiff);
     });
